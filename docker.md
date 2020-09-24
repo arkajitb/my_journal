@@ -28,10 +28,26 @@ Images are constructed in layers
 base layer(ubuntu)
 software files ....
 
+3. docker run -it -d -p 5000:5000 flaskapp
+it : interactive
+-d : no idea
+-p : open port(docker port: flask port)
+
+4. remove an imgae
+docker rmi imageID
+
+5. stop a container
+docker stop containerID
+
+6. list all the containers
+docker ps
+
+
+
 build image to create the container
 container is a running instance of a docker image
-
-VM vs container
+------------------------------------------------------------------------
+###VM vs container
 VM has a complete OS on it.
 hardware is virtualized using a software called hypervisor.
 It uses the system from the host server.
